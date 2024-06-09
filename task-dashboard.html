@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Task Manager</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="task_creation.html">Create Task</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<div class="d-flex justify-content-between align-items-center">
+    <div>
+        <label for="filterStatus">Filter by Status</label>
+        <select id="filterStatus" class="form-control">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+        </select>
+    </div>
+    <div>
+        <label for="sortTasks">Sort by</label>
+        <select id="sortTasks" class="form-control">
+            <option value="dueDate">Due Date</option>
+            <option value="priority">Priority</option>
+        </select>
+    </div>
+</div>
+<div id="taskList">
+    
+</div>
+
+    <div class="container mt-4">
+        <h2>Task Dashboard</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Task 1</h5>
+                        <p class="card-text">Brief description of task 1.</p>
+                        <p class="card-text"><small class="text-muted">Due date: 2024-06-15</small></p>
+                        <a href="task_details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
